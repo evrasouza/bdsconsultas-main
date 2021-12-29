@@ -33,6 +33,13 @@ public class Uri2609Application implements CommandLineRunner {
 			System.out.println(obj);
 		}
 		System.out.println("\n\n\n");
+		
+		List<CategorySumDTO> result2 = repository.search2();
+
+		System.out.println("\n\n\n*** RESULTADO JPQL: ");
+		for(CategorySumDTO obj : result2) {
+			System.out.println(obj);
+		}
 
 	}
 }
